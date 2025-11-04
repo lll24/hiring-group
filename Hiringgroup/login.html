@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="./login/style.css"><link rel="stylesheet" href="login/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="frame">
+      <div class="nav">
+        <ul>
+          <li class="signin-active"><a class="btn">Sign in</a></li>
+        </ul>
+      </div>
+      <form class="form-signin" action="/hiring-group/login/validar.php" method="POST">
+        <label for="correo">Correo</label>
+        <input class="form-styling" type="email" name="correo" required />
+
+        <label for="clave">Clave</label>
+        <input class="form-styling" type="password" name="clave" required />
+
+        <div class="btn-animate">
+          <button class="btn-signin" type="submit">Sign in</button>
+           <button class="btn-signup" type="button" onclick="window.location.href='/hiring-group/login/registrar.php'">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
